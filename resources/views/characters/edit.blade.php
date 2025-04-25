@@ -7,7 +7,7 @@
         @csrf
         @method('PUT')
         @include('characters.form', ['character' => $character])
-        <button class="btn btn-danger">Update List Character</button>
+        <button class="btn btn-danger">Update Character</button>
         <a href="{{ route('characters.index') }}" class="btn btn-outline-danger">Cancel</a>
     </form>
 @endsection

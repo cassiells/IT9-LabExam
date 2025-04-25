@@ -6,8 +6,12 @@
     <form action="{{ route('characters.update', $character) }}" method="POST">
         @csrf
         @method('PUT')
+        
         @include('characters.form', ['character' => $character])
-        <button class="btn btn-danger">Update Character</button>
-        <a href="{{ route('characters.index') }}" class="btn btn-outline-danger">Cancel</a>
+
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-success">Update Character</button>
+            <a href="{{ route('characters.index') }}" class="btn btn-outline-secondary">Cancel</a>
+        </div>
     </form>
 @endsection

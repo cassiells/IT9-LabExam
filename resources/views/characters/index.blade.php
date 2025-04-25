@@ -2,9 +2,9 @@
 
 @section('content')
     
-    <h1 class="mb-4">Character Dictionary</h1>
+    <h1 class="mb-4">Character List</h1>
 
-    <a href="{{ route('characters.create') }}" class="btn btn-dark mb-3">+ Create Character</a>
+    <a href="{{ route('characters.create') }}" class="btn btn-dark mb-3">+ Create List Character</a>
 
     @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
@@ -18,7 +18,7 @@
                 <a href="{{ route('characters.edit', $character) }}" class="btn btn-sm btn-outline-dark">Edit</a>
                 <form action="{{ route('characters.destroy', $character) }}" method="POST" style="display:inline-block;">
                     @csrf @method('DELETE')
-                    <button onclick="return confirm('Are you sure you want to delete this info?')" class="btn btn-sm btn-outline-danger">Delete</button>
+                    <button onclick="return confirm('You sure you want to delete this?')" class="btn btn-sm btn-outline-danger">Delete</button>
                 </form>
             </div>
         </div>

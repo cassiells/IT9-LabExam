@@ -7,7 +7,7 @@ use App\Models\Character;
 
 class CharacterController extends Controller
 {
-    // Show all characters
+
     public function index()
     {
         $characters = Character::all();

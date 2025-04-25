@@ -14,4 +14,4 @@
             </div>
         </div>
     </div>
-</x-app-layout>
+</x-app-layout>git remote add origin https://github.com/cassiells/IT9-LaravelLab2.git
